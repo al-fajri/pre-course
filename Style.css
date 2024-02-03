@@ -4,6 +4,45 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+nav {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav .card-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .card-left img {
+  width: 50px;
+  height: 50px;
+}
+
+nav .card-right {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+nav .card-right ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav .card-right ul li a {
+  text-decoration: none;
+}
+
+nav .card-right button {
+  height: 35px;
+  background-color:#333;
+  border-radius: 4px;
+  color: #f4f4f4;
+}
 
 ul {
   position: -webkit-sticky; /* Safari */

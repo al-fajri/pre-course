@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
     <header>
+        <div class="logo">
+            <b>BRAND</b>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
         <h1>Welcome to Our Landing Page</h1>
         <p>Discover amazing things with us!</p>
         <p>Lets make a wish and take a chance</p>
-    </header>
+    </section>
 
-    <section>
+    <section id="about">
         <h2>About Us</h2>
         <p>Keep doing your best!</p>
         <p>Never give up because when you give up no more bright future for you.</p>
@@ -24,14 +35,14 @@
         <p>Stay enthusiastic in learning and never give up in every challenge</p>
     </section>
 
-    <section>
+    <section id="features">
         <h2>Features</h2>
         <p>Keep doing your best!</p>
         <p>Always learn from mistake to make yourself a better person.</p>
         <p>Lets make a wish and take a chance</p>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: info@example.com</p>
         <p>Phone: +123456789</p>
@@ -40,6 +51,22 @@
     <footer>
         <p>&copy; 2023 Landing Page. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                const offset = targetSection.offsetTop - document.querySelector('header').offsetHeight;
+
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            });
+        }); 
+    </script>
 </body>
 
 </html>

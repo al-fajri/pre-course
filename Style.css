@@ -3,21 +3,28 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 header {
   background-color: #333;
-  padding: 1em;
   text-align: center;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 section {
-  padding: 2em;
+  padding: 1em;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
+  margin-top: 1em;
   background-color: #333;
   padding: 1em;
   text-align: center;
@@ -25,4 +32,43 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.logo {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo b {
+  font-size: 1.5em;
+}
+
+.menu {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.menu a:hover {
+  color: #ff0000;
 }

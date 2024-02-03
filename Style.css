@@ -82,6 +82,31 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+#contactUs {
+  margin-bottom: 0%;
+}
+
+#emailSection {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+#emailContact {
+  margin-left: 0.4em;
+}
+
+#phoneSection {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 25px;
+}
+
+#phoneContact {
+  margin-left: 0.2em;
+}
+
 /* Adding CSS glow effect on glow class */
 .glow {
   font-size: 80px;
